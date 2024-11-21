@@ -3,7 +3,7 @@
     "meetingId": "k7tb-chj6-9sjp",
     "start": "2024-04-02T11:31:52.746Z",
     "end": "2024-04-02T11:50:23.198Z",
-    "uniqueParticipantsCount": 4,
+    "uniqueParticipantsCount": 5,
     "participantArray": [
       {
         "participantId": "vCPSzABN",
@@ -17,6 +17,10 @@
             {
               "start": "2024-04-02T11:48:55.204Z",
               "end": "2024-04-02T11:50:23.198Z"
+            },
+            {
+              "start": "2024-04-02T11:48:01.648Z",
+              "end": "2024-04-02T11:48:53.973Z"
             }
           ],
           "webcam": [
@@ -158,6 +162,18 @@
             "end": "2024-04-02T11:43:20.283Z"
           }
         ]
+      },
+      {
+        "participantId": "vCPSzABN",
+        "name": "bbbn",
+        "events": {
+          "mic": [],
+          "webcam": [],
+          "screenShare": [],
+          "screenShareAudio": [],
+          "errors": []
+        },
+        "timelog": []
       }
     ]
   },
