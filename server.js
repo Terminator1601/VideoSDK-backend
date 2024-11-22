@@ -263,6 +263,36 @@ app.get("/sessions/:meetingId", (req, res) => {
 
 
 
+app.get("/session/:meetingId/participant/:participantId", (req, res) => {
+    const { meetingId, participantId } = req.params;  // Correct way to access parameters
+  
+    // Read data (assuming this function returns the data you have provided)
+    const data = readData();
+  
+    // Find the session based on meetingId
+    const session = data.find((s) => s.meetingId === meetingId);
+  
+    // If session is not found, return 404
+    if (!session) {
+      return res.status(404).send({ message: "Session not found." });
+    }
+  
+    // Find the participant within the session
+    const participant = session.participantArray.find((p) => p.participantId === participantId);
+  
+    // If participant is not found, return 404
+    if (!participant) {
+      return res.status(404).send({ message: "Participant not found." });
+    }
+  
+    // If participant found, return the participant data
+    res.status(200).send(participant);
+  });
+  
+
+
+
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
