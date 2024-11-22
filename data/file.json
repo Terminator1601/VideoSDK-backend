@@ -181,5 +181,19 @@
     "meetingId": "asdkjhsdc",
     "start": "2024-11-20T00:40",
     "end": "2024-11-21T00:40"
+  },
+  {
+    "meetingId": "abcedfghij",
+    "start": "2024-11-22T13:46",
+    "end": null,
+    "uniqueParticipantsCount": 0,
+    "participantArray": []
+  },
+  {
+    "meetingId": "abcedfghij",
+    "start": "2024-11-22T13:47",
+    "end": null,
+    "uniqueParticipantsCount": 0,
+    "participantArray": []
   }
 ]
