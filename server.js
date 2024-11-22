@@ -166,6 +166,11 @@ app.post("/sessions/:meetingId/participants", (req, res) => {
         return res.status(404).send({ message: "Session not found." });
     }
 
+    // Ensure participantArray is an array
+    if (!Array.isArray(session.participantArray)) {
+        session.participantArray = []; // Initialize if not an array
+    }
+
     const participant = {
         participantId,
         name,
