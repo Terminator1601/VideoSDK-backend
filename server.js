@@ -246,7 +246,8 @@ app.get("/sessions", (req, res) => {
 
 // Add this to your existing Express server file
 
-// API to fetch a specific session details
+// Add this to your existing Express server file
+
 app.get("/sessions/:meetingId", (req, res) => {
     const { meetingId } = req.params;
 
@@ -259,6 +260,7 @@ app.get("/sessions/:meetingId", (req, res) => {
 
     res.status(200).send(session);
 });
+
 
 
 // Start the server
